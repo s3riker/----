@@ -1,0 +1,344 @@
+/*All page*/
+@font-face {
+    font-family: 'Lombardina Initial One';
+    src: url('fonts/Lombardina_Initial_One.ttf');
+}
+
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 15px;
+}
+
+a:focus {
+	outline: 0 solid;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+.fix {
+	overflow: hidden
+}
+
+p,
+li 
+{
+	font-family: 'Arimo';
+	font-size: 20px;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+	margin: 0 0 15px;
+	font-weight: 700;
+	font-family: 'Lombardina Initial One';
+}
+
+html,
+body {
+	height: 100%;
+    background-color: black;
+}
+
+a {
+	color: #fff;
+	font-family: 'Arimo';
+}
+
+a:hover {
+	text-decoration: none
+}
+
+.btn-trans:focus {
+	outline: none;
+	color: #fff;
+
+}
+
+/*Sections*/
+
+/*Header*/
+
+header .navbar {
+	border-radius: 0px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > li > a:hover {
+	background: none;
+}
+
+.navbar-inverse {
+	background: rgba(0, 0, 0, 0.75) !important;
+}
+
+#myNavbar ul li {
+	padding: 40px 15px 30px;
+	text-transform: uppercase;
+}
+
+#myNavbar ul li.active a {
+	color: #ffffff;
+}
+
+#myNavbar ul li.active > a::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	left: 0;
+	border-bottom: 2px solid crimson;
+	bottom: 0;
+	transition: all 0.2s;
+}
+
+#myNavbar ul li a {
+	border-bottom: 2px solid transparent;
+}
+
+.navbar-inverse #myNavbar li:hover a::after, #myNavbar ul li a:hover {
+	border-bottom: 2px solid crimson;
+	color: crimson;
+}
+
+#myNavbar ul li a {
+	padding: 0 0 5px;
+	font-size: 16px;
+	color: #fff;
+	transition: all 0.2s ease-in 0.2s;
+}
+
+header .navbar-brand {
+	padding: 28px 15px;
+}
+
+header .navbar {
+	margin-bottom: 0;
+}
+
+/*Home section*/
+
+#home {
+	background: url(img/Logo.png) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+	height: 700px;
+}
+
+.home-text {
+	text-transform: uppercase;
+	color: #fff;
+
+}
+
+.home-text h1 {
+	margin-top: 5%;
+	font-size: 115px;
+	color: #fff;
+	font-weight: 500;
+
+}
+
+.home-text h2 {
+	font-size: 100px;
+	color: #fff;
+	font-weight: 400;
+
+}
+
+
+.home-text h3 {
+	padding: 10px;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.home-text span {
+	color: white;	
+	font-weight: 700;
+}
+
+#min-about {
+	padding: 7px;
+ }
+
+.overlay {
+	position: absolute;
+	background: rgba(119, 4, 0, 0.726);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.carousel-indicators li {
+	width: 110px;
+	height: 10px;
+	background-color: #fff;
+	border: 1px solid;
+	border-radius: 0;
+}
+
+.carousel-indicators li.active {
+	background-color: #000;
+	width: 110px;
+	height: 10px;
+}
+
+.carousel-indicators {
+	bottom: -240px !important;
+}
+
+/*Graf section*/
+
+#graf{
+padding: 80px 0 160px;
+}
+
+.single{
+	display: inline-block;
+	color: white;
+	background-color: #000;
+	margin: 15px;
+	/*border: crimson solid 2px;*/
+	
+}
+
+.single p{
+	padding: 10px;
+}
+
+.section-heading h2{
+	font-size: 70px;
+	font-weight: normal;
+	color: #fff;
+	margin: 25px;
+}
+
+/*Gameplay section*/
+
+/*New section*/
+
+/*Contacts section*/
+
+#info {
+	padding: 80px 0;
+	color: #fff;
+	background-color: #000000;
+
+}
+
+.single-info:hover .price-top {
+	background-color: #fff;
+}
+
+.single-info {
+	margin-top: 50px;
+}
+
+.info-top {
+	background-color: #01cef2;
+	padding: 25px 0;
+	transition: all 0.3s;
+}
+
+.info-top h3 {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+sub, sup {
+	font-size: 20px;
+}
+
+h1 sup {
+	top: -1.5em;
+}
+
+.info-top i {
+	font-size: 50px;
+	padding: 10px 0;
+}
+
+.info-top h1 {
+	font-size: 65px;
+}
+
+.info-bottom {
+	color: #000;
+	background-color: #E8E4E4;
+	padding: 30px 0;
+
+}
+
+.info-bottom p {
+	line-height: 24px;
+	padding: 10px;
+}
+
+.info-bottom a {
+	width: 230px;
+	color: #fff;
+	background: #000;
+	font-size: 16px;
+	border-radius: 0;
+	line-height: 45px;
+	font-weight: bold;
+	margin-top: 20px;
+
+}
+
+.info-bottom a:hover {
+	background: #01cef2;
+	color: #fff;
+}
+
+.section-heading h3
+{
+font-family: 'Arimo';
+font-size: 50px;
+font-weight: 200;
+}
+
+/*Footer*/
+footer {
+	padding: 25px 0 20px;
+	background-color: crimson;
+	color: #FFF;
+}
+audio
+{
+background-color: rgba(0, 0, 0, 0);
+}
+.footer-p {
+	padding: 10px;
+	font-size: 16px;
+}
+
+.footer-social i {
+	padding: 12px 5px;
+	font-size: 18px;
+
+}
+
+.footer-social i:hover {
+	color: #000000;
+}
